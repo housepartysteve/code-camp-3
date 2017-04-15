@@ -1,6 +1,4 @@
-<footer class="footer">
-    <div class="container">
-        <div class="row">
+<div class="container">
             <div class="col-md-3">
                 <ul>
                     <h5>
@@ -43,9 +41,11 @@
                 </ul>
             </div>
         </div>
-    </div>
+</div>
     <div class="text-center">
         <p>&copy; Code Camp 2017</p>
     </div>
-    </div>
-</footer>
+
+<!-- Latest compiled and minified JS -->
+<script src="{{ asset('js/app.js') }}"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
