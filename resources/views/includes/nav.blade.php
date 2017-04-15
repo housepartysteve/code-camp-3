@@ -1,5 +1,4 @@
-<nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
+ <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">Toggle navigation</span>
@@ -34,7 +33,7 @@
                             <li><a href="{{ url('/home') }}">Profile</a></li>
                             <li><a href="{{ route('logout') }}"
                                onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
+                                        document.getElementById('logout-form').submit();">
                                 Logout
                             </a></li>
 
@@ -49,4 +48,3 @@
                 @endif
         </div><!--/.nav-collapse -->
     </div>
-</nav>
