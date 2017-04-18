@@ -10,7 +10,7 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Home</a></li>
                 <li><a href="#">Learn</a></li>
                 <li><a href="#">Lessons</a></li>
                 <li><a href="#">Help</a></li>
