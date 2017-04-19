@@ -1,43 +1,43 @@
 <div class="container">
             <div class="col-md-3">
+                <h5>
+                    Teach
+                </h5>
                 <ul>
-                    <h5>
-                        Teach
-                    </h5>
-                    <li><a href="#">Teach yourself</a></li>
-                    <li><a href="#">Schools</a></li>
-                    <li><a href="#">Classroom Teaching</a></li>
+                    <li><a href="{{ url('/teachYourself') }}">Teach yourself</a></li>
+                    <li><a href="{{ url('/schools') }}">Schools</a></li>
+                    <li><a href="{{ url('/classroomTeaching') }}">Classroom Teaching</a></li>
                     <li><a href="#">Sign up</a></li>
                     <li><a href="#">Login</a></li>
                 </ul>
             </div>
             <div class="col-md-3">
+                <h5>
+                    About
+                </h5>
                 <ul>
-                    <h5>
-                        About
-                    </h5>
-                    <li><a href="#">The Idea</a></li>
-                    <li><a href="#">The Team</a></li>
-                    <li><a href="#">The Location</a></li>
+                    <li><a href="{{ url('/idea') }}">The Idea</a></li>
+                    <li><a href="{{ url('/team') }}">The Team</a></li>
+                    <li><a href="{{ url('/location') }}">The Location</a></li>
                 </ul>
             </div>
             <div class="col-md-3">
+                <h5>
+                    Contact
+                </h5>
                 <ul>
-                    <h5>
-                        Contact
-                    </h5>
-                    <li><a href="#">Send us a message!</a></li>
+                    <li><a href="{{ url('/contactForm') }}">Send us a message!</a></li>
                 </ul>
             </div>
             <div class="col-md-3">
+                <h5>
+                    Connect With Us
+                </h5>
                 <ul>
-                    <h5>
-                        Connect With Us
-                    </h5>
-                    <li><a href="https://twitter.com/?lang=en">Twitter</a></li>
-                    <li><a href="https://www.facebook.com/">Facebook</a></li>
-                    <li><a href="https://www.linkedin.com/feed/">LinkedIn</a></li>
-                    <li><a href="https://www.instagram.com/?hl=en">Instagram</a></li>
+                    <li><a href="https://twitter.com/?lang=en">Twitter  <i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.facebook.com/">Facebook  <i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.linkedin.com/feed/">LinkedIn  <i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.instagram.com/?hl=en">Instagram  <i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -47,5 +47,14 @@
     </div>
 
 <!-- Latest compiled and minified JS -->
+<script>
+    //new vue({
+        //el: '#app',
+        //data: {
+           // 'subject_items' : ['','','']
+
+        //}
+    //});
+</script>
 <script src="{{ asset('js/app.js') }}"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>

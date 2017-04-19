@@ -25,17 +25,17 @@ Route::get('/home', 'HomeController@index');
 
 Route::get('learn', function()
 {
-    return View::make('layouts.learn');
+    return View::make('pages.learn');
 });
 
 Route::get('lessons', function()
 {
-    return View::make('layouts.lessons');
+    return View::make('pages.lessons');
 });
 
 Route::get('help', function()
 {
-    return View::make('layouts.help');
+    return View::make('pages.help');
 });
 
 //Footer nav page routes
@@ -43,33 +43,33 @@ Route::get('help', function()
 //Teach
 Route::get('teachYourself', function()
 {
-    return View::make('layouts.teachYourself');
+    return View::make('pagesfoot.teachYourself');
 });
 
 Route::get('schools', function()
 {
-    return View::make('layouts.schools');
+    return View::make('pagesfoot.schools');
 });
 
-Route::get('classroom', function()
+Route::get('classroomTeaching', function()
 {
-    return View::make('layouts.classroom');
+    return View::make('pagesfoot.classroomTeaching');
 });
 
 //About
 Route::get('idea', function()
 {
-    return View::make('layouts.idea');
+    return View::make('pagesfoot.idea');
 });
 
 Route::get('team', function()
 {
-    return View::make('layouts.team');
+    return View::make('pagesfoot.team');
 });
 
 Route::get('location', function()
 {
-    return View::make('layouts.location');
+    return View::make('pagesfoot.location');
 });
 
 //Contact
@@ -84,7 +84,6 @@ Route::get('location', function()
 
 //Authentication
 Auth::routes();
-
 
 //Misc
 //Route::resource('admin', 'AdminController');

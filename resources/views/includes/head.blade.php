@@ -17,6 +17,8 @@
 <link href="{{ asset('css/app.css') }}"  rel="stylesheet">
 
 <!-- Scripts -->
+<script src="https://use.fontawesome.com/6bf253363b.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.2.6/vue.min.js"></script>
 <script>
         window.Laravel = {!! json_encode([
         'csrfToken' => csrf_token(),

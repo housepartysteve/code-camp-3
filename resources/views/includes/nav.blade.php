@@ -10,10 +10,10 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Learn</a></li>
-                <li><a href="#">Lessons</a></li>
-                <li><a href="#">Help</a></li>
+                <li><a href="{{ url('/') }}">Home</a></li>
+                <li><a href="{{ url('/learn') }}">Learn</a></li>
+                <li><a href="{{ url('/lessons') }}">Lessons</a></li>
+                <li><a href="{{ url('/help') }}">Help</a></li>
                 <!--<li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
                     <ul class="dropdown-menu">
@@ -30,6 +30,7 @@
                 @if (Route::has('login'))
                     <ul class="nav navbar-nav navbar-right">
                         @if (Auth::check())
+                            <i class="fa fa-user" aria-hidden="true"></i>
                             <li><a href="{{ url('/home') }}">Profile</a></li>
                             <li><a href="{{ route('logout') }}"
                                onclick="event.preventDefault();
@@ -41,8 +42,8 @@
                                 {{ csrf_field() }}
                             </form>
                         @else
-                            <li><a href="{{ url('/login') }}">Login</a></li>
-                            <li><a href="{{ url('/register') }}">Register</a></li>
+                            <li><a href="{{ url('/login') }}"><i class="fa fa-user fa-2x" aria-hidden="true"></i>  Login</a></li>
+                            <li><a href="{{ url('/register') }}"><i class="fa fa-pencil-square fa-2x" aria-hidden="true"></i>  Register</a></li>
                         @endif
                     </ul>
                 @endif
