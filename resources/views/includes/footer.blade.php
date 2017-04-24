@@ -1,22 +1,10 @@
+<footer style="background-color:#D1E8E2;">
 <div class="container">
-            <div class="col-md-3">
-                <h5>
-                    Teach
-                </h5>
-                <ul>
-                    <li><a href="{{ url('/teachYourself') }}">Teach yourself</a></li>
-                    <li><a href="{{ url('/schools') }}">Schools</a></li>
-                    <li><a href="{{ url('/classroomTeaching') }}">Classroom Teaching</a></li>
-                    <li><a href="#">Sign up</a></li>
-                    <li><a href="#">Login</a></li>
-                </ul>
-            </div>
             <div class="col-md-3">
                 <h5>
                     About
                 </h5>
                 <ul>
-                    <li><a href="{{ url('/idea') }}">The Idea</a></li>
                     <li><a href="{{ url('/team') }}">The Team</a></li>
                     <li><a href="{{ url('/location') }}">The Location</a></li>
                 </ul>
@@ -41,12 +29,15 @@
                 </ul>
             </div>
         </div>
-</div>
     <div class="text-center">
         <p>&copy; Code Camp 2017</p>
     </div>
-
+    </div>
+</footer>
 <!-- Latest compiled and minified JS -->
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmT5W2T5EUXgyGLLgtNuJK8puvjUg_qRQ&&callback=initMap">
+</script>
 <script>
     //new vue({
         //el: '#app',
@@ -56,5 +47,7 @@
         //}
     //});
 </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="{{ asset('js/jquery-ui.js')}}"></script>
 <script src="{{ asset('js/app.js') }}"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>

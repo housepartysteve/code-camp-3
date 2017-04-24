@@ -6,24 +6,24 @@
     </head>
     <body>
     <div id="app">
-        <div class="container">
+
 
             <!-- Navigation Bar -->
-            <nav class="navbar navbar-default navbar-fixed-top">
+            <nav class="navbar navbar-inverse navbar-fixed-top">
                 @include('includes.nav')
             </nav>
 
             <!-- Index content -->
-            <div id="main" class="row">
+            <div id="main" class="row" style="background-color: #AFD275;">
                 @yield('content')
             </div>
 
             <!-- Footer -->
-            <footer class="row">
+            <div id="footer" class="row" style="background-color: #D1E8E2;">
                 @include('includes.footer')
-            </footer>
+            </div>
 
-        </div>
+
     </div>
     </body>
 </html>
