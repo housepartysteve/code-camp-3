@@ -1,37 +1,98 @@
 @extends ('layouts.master')
 
 @section ('content')
-    <div class="jumbotron">
+    @if (Auth::check())
+        <div class="jumbotron" style="background-image:url({{ asset('img/forest1.jpeg') }});background-size: auto 100%">
         <div class="container text-center">
-            <h1 class="display-3">Campers Help Page</h1>
-            <p>Step by step guides on how to use the website!</p>
-            <p>Follow each section to get up and running and become one of the best code campers around!</p>
+            <br><br><br><br><br><br><br><br><br><br>
         </div>
     </div>
 
     <div class="container text-center">
-        <!-- row of columns -->
+        <h1 class="display-3">Choose a subject</h1>
+        <p>Each subject has different difficulties.</p>
+        <h2>Subjects</h2>
         <div class="row">
-            <div class="col-md-4">
-                <img class="rounded-circle" src="#" alt="Generic placeholder image" width="140" height="140">
-                <h2>Adventure</h2>
-                <p>Progress your profile to gain different badges and become the best in your class!</p>
-                <p><a class="btn btn-primary" href="{{ url('/register') }}" role="button">Start camping now! &raquo;</a></p>
+            <div class="col-md-8 col-md-offset-2">
+                <div class="card" style="background-color: #D1E8E2;">
+                    <div class="card-block">
+                        <h3 class="card-title">Introduction</h3>
+                        <h4>Part 1</h4>
+                        <p>
+                            HTML is the language that is spoken to build all your favourite websites such as youtube, facebook and netflix. <br>
+                            The list goes on, without this language you would not have these websites! <br>
+                            This subject will teach html from beginner to expert!
+                        </p>
+                        <a href="{{ url('/intro') }}" class="btn btn-success">Begin The Learning Adventure</a>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-4">
-                <img class="rounded-circle" src="#" alt="Generic placeholder image" width="140" height="140">
-                <h2>Learn code</h2>
-                <p>Learning code has never been so fun.</p>
-                <p><a class="btn btn-primary" href="{{ url('/learn') }}" role="button">This way! &raquo;</a></p>
+        </div>
+        <br><br><br>
+        <div class="row text-center">
+            <div class="col-md-5">
+                <div class="card" style="background-color: #D1E8E2;">
+                    <i class="fa fa-html5 fa-5x" aria-hidden="true"></i>
+                    <div class="card-block">
+                        <h3 class="card-title">HTML</h3>
+                        <h4>Part 2</h4>
+                        <p>
+                            HTML is the language that is spoken to build all your favourite websites such as youtube, facebook and netflix. <br>
+                            The list goes on, without this language you would not have these websites! <br>
+                            This subject will teach html from beginner to expert!
+                        </p>
+                        <a href="{{ url('/intro-html') }}" class="btn btn-success">Begin Course</a>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-4">
-                <img class="rounded-circle" src="#" alt="Generic placeholder image" width="140" height="140">
-                <h2>Take lessons</h2>
-                <p>After learning a section you will then be jumping into a quiz or game to allow you to dive deeper into the forest of coding!</p>
-                <p><a class="btn btn-primary" href="{{ url('/lessons') }}" role="button">Start lessons now! &raquo;</a></p>
+
+            <div class="col-md-5 col-md-offset-2" >
+                <div class="card" style="background-color: #D1E8E2;">
+                    <i class="fa fa-css3 fa-5x" aria-hidden="true"></i>
+                    <div class="card-block">
+                        <h3 class="card-title">CSS</h3>
+                        <h4>Part 3</h4>
+                        <p>
+                            CSS is used to style HTML it enables the websites to look pretty and beautiful! <br>
+                            Learning this language will allow you to customise and personalise The HTML you have learn't in the past subject<br>
+                            Progress on your learning adventure now!
+                        </p>
+                        <a href="{{ url('/csstyle') }}" class="btn btn-success">Begin Course</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
+    @else
+        <div class="jumbotron" style="background-image:url({{ asset('img/forest1.jpeg') }});background-size: auto 100%">
+            <div class="container text-center">
+                <br><br><br><br><br><br><br><br><br><br><br>
+            </div>
+        </div>
 
+        <div class="container">
+            <div class="row">
+                <div class="text-center">
+                    <h1 class="display-3">Choose a subject</h1>
+                    <p>Each subject has different difficulties.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                <h3 class="text-center">To gain access to the subjects you must first have an account!</h3>
+                </div>
+                <div class="col-md-4 col-md-offset-2">
+                    <h3>Register</h3>
+                      <p><a class="btn btn-success" href="{{ url('/register') }}" role="button">Register</a></p>
+                </div>
+                <div class="col-md-4 col-md-offset-2">
+                    <h3>Login</h3>
+                    <p><a class="btn btn-success" href="{{ url('/login') }}" role="button">Login</a></p>
+                </div>
+            </div>
+        </div>
+
+        <br><br>
+    @endif
 @endsection
